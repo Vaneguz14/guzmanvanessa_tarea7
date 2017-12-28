@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <script src="díaSemana.js"> </script>
+    <title>Cálculo de los días de la semana</title>
+</head>
+<body>
+    <script>
+        var dia= prompt("¿qué día de la semana quieres ver");
+        var mes= prompt("Introduce en números el mes que quieres ver ");
+        var year= prompt("y el año?");
+        var A;
+        var B;
+        var C;  
+        var D;
+        var E;
+
+        A= siglo(year);
+        B= Any(year);
+        C= Bisiesto (year, mes);
+        D= numeromes(mes);
+        E= numerodia(dia);
+
+        var suma = A+B+C+D+E;
+        var R= suma %7;
+
+        alert("el día correspondiente a esta fecha es: "+ resultadofinal(R));
+
+
+    </script>
+    
+</body>
+</html>
